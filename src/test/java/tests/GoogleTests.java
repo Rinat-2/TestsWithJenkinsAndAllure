@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.logevents.SelenideLogger.addListener;
 
-public class GoogleTests {
+public class GoogleTests extends TestBase{
     @Test
     void selenideSearchTest () {
         addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(true));
